@@ -1,13 +1,14 @@
-#include "adcreader.h"
-#include <QDebug>
-#include "gz_clk.h"
-
-#include "gpio-sysfs.h"
+#include <stdint.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <linux/types.h>
 #include <linux/spi/spidev.h>
-#include <assert.h>
+
+#include "gz_clk.h"
+#include "gpio-sysfs.
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
 
