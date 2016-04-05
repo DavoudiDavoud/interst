@@ -1,5 +1,6 @@
 #include "adcreader.h"
 #include <QDebug>
+#include "gz_clk.h"
 
 #include "gpio-sysfs.h"
 #include <fcntl.h>
